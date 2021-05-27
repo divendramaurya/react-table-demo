@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+/* a {
+  text-decoration: none;
+  color: #0e151d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fff;
+  transition: all ease-in-out 0.2s;
+}
+nav a:hover {
+  background: rgb(166, 175, 255);
+  transition: all ease-in-out 0.2s;
+}
+
+nav .active {
+  background: #5855f3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+} */
+
+.active {
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  border: 2px solid black;
+  text-decoration: underline;
+  margin-right: 15px 15px;
+}

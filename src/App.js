@@ -7,7 +7,14 @@ import { PaginationTable } from "./components/PaginationTable";
 import { RowSelection } from "./components/RowSelection";
 import { SortingTable } from "./components/SortingTable";
 import { StickyTable } from "./components/StickyTable";
-import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import {
+  BrowserRouter,
+  NavLink,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 import styled from "styled-components";
 
 function App() {
@@ -27,21 +34,37 @@ function App() {
         <DIV>React Table Demo</DIV>
         <hr></hr>
         {"  |  "}
-        <Link to="/">Basic Table</Link>
+        <NavLink exact activeClassName="active" to="/">
+          Basic Table
+        </NavLink>
         {"  |  "}
-        <Link to="/SortingTable">SortingTable</Link>
+        <NavLink activeClassName="active" to="/SortingTable">
+          SortingTable
+        </NavLink>
         {"  |  "}
-        <Link to="/FilteringTable">FilteringTable</Link>
+        <NavLink activeClassName="active" to="/FilteringTable">
+          FilteringTable
+        </NavLink>
         {"  |  "}
-        <Link to="/PaginationTable">PaginationTable</Link>
+        <NavLink activeClassName="active" to="/PaginationTable">
+          PaginationTable
+        </NavLink>
         {"  |  "}
-        <Link to="/RowSelection">RowSelection</Link>
+        <NavLink activeClassName="active" to="/RowSelection">
+          RowSelection
+        </NavLink>
         {"  |  "}
-        <Link to="/ColumnOrder">ColumnOrder</Link>
+        <NavLink activeClassName="active" to="/ColumnOrder">
+          ColumnOrder
+        </NavLink>
         {"  |  "}
-        <Link to="/ColumnHiding">ColumnHiding</Link>
+        <NavLink activeClassName="active" to="/ColumnHiding">
+          ColumnHiding
+        </NavLink>
         {"  |  "}
-        <Link to="/StickyTable">StickyTable</Link>
+        <NavLink activeClassName="active" to="/StickyTable">
+          StickyTable
+        </NavLink>
         {"  |  "}
         <hr></hr>
         <Route exact path="/" component={BasicTable}></Route>
